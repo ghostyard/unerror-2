@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C://unerror</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="topbar">
@@ -141,8 +142,160 @@
             </div>
         </div>
         <div id="bg">
-          testing
+          <div id="bgbox">
+            <h1>Every day we change the world.</h1>
+            <p><b>imagine a world like ours, but a few seconds closer to midnight.</b> the world of <i>mr. robot</i>
+              is barely outside of the one we live in. it's a little grimier, a little angrier, and a lot
+              more prone to revolution. it's got economic collapse, rampant
+              capitalism left so completely unfettered that it's formed enormous conglomerates, everyone 
+              drowning in debt and work.</p>
+              <p>it's about being so particularly and paralyzingly alone that living in the world becomes
+              so untenable that it has to change. then it asks the question: what happens after you change
+              the world, and everything keeps turning anyway, way outside your control? 
+              </p>
+              <p>this naturally fits into: <b>crime</b>, <b>near-future sci-fi</b>, <b>urban fantasy</b>, 
+              <b>certain kinds of horror</b>. anything else is workable. you'd be shocked how easy it is 
+              to find an analogue for hacking in most settings.</p>
+              <p>themes: neo-noir, technology, social isolation, revolution, anti-capitalism.</p>
+              <button id="bgextend">See more</button>
+          </div>
+            <div class="bg3box">
+              <div class="bgtop">
+                <i class="ph-light ph-users-three"></i>
+                <h3>THE PUBLIC KNOWS</h3>
+              </div>
+              
+              <ul>
+                  <li>elliot alderson was associated with stopping the washington township nuclear plant from melting down over christmas 2015.</li>
+                  <li>everyone else in the power plant died, including the leader of the infamous deus group, a collection of the hundred or so richest people in the world.</li>
+                  <li>fsociety, a hacker collective, outed the deus group. they were also responsible for 5/9 in early 2015, which encrypted most debt records and tanked the economy. they later fixed that.</li>
+                  <li>they're also associated with blowing up 71 buildings and killing thousands of people. there's a lot of talk about that one.</li>
+              </ul>
+          </div>
+          <div class="bg3box">
+            <div class="bgtop">
+              <i class="ph-light ph-computer-tower"></i>
+              <h3>HACKERS KNOW</h3>
+            </div>
+              <ul>
+                  <li>sepi0l is an infamous and nigh-invisible hacker who disappeared for most of 2015 and then resurfaced in late 2016.</li>
+                  <li>no one really knows anything about the original members of fsociety. there was a secondary group that popped up after 5/9, but the footprint wasn't the same.</li>
+                  <li>lots of rumors about fsociety in general. people say they were a part of it, but that might not be true. there's plenty of groups who popped up trying to be their successors, too.</li>
+                  <li>in terms of work, sepi0l spends a lot of time on irc boards and has written some fucking unhinged malware. they love open source projects and they hate suits, whether government or business.</li>
+              </ul>
+          </div>
+          <div class="bg3box">
+            <div class="bgtop">
+              <i class="ph-light ph-siren"></i>
+              <h3>LAW ENFORCEMENT KNOWS</h3>
+            </div>
+             
+              <ul>
+                  <li>elliot alderson has a criminal record. he took a deal to not be tried for property damage, and later went to jail for computer hacking and stealing a guy's dog.</li>
+                  <li>elliot alderson was investigated by the fbi in connection to fsociety, 5/9, and the 71 buildings. he wasn't charged. a lot of it seems to rest at the feet of now-deceased e corp cto tyrell wellick.</li>
+                  <li>if you're at a high enough clearance level, you know more about the details. elliot's sister was briefly arrested in connection to fsociety. it appears that a lot of what happened was related to the dark army, a criminal hacking syndicate used by the deus group as their muscle.</li>
+              </ul>
+          </div>
+        </div>
+        <div id="profile">
+          <div id="profiletop">
+            <div class="topleft">
+              <div class="leftside">
+                <img src="https://placehold.co/150">
+                <div class="profiletitle">WHO IS ELLIOT ALDERSON?</div>
+              </div>
+            </div>
+            <div class="topright">
+              <button id="extend"><i class="ph-light ph-address-book"></i> View Extended Profile</button>
+            </div>
+          </div>
+          <div class="tabs">
+            <div class="tabs__pills">
+              <button class="btn active" data-id="summer">Summer</button>
+              <button class="btn" data-id="autumn">Autumn</button>
+              <button class="btn" data-id="winter">Winter</button>
+              <button class="btn" data-id="spring">Spring</button>
+            </div>
+          
+            <div class="tabs__panels">
+              <!-- Content panels for each tab -->
+              <!-- Summer tab -->
+              <div id="summer" class="active">
+                <figure>
+                  <img src="https://picsum.photos/id/34/400/270" alt="summer" />
+                </figure>
+                <div>
+                  <h4>Summer</h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+                    tempore consectetur animi sequi dolore deserunt error nulla officia
+                    amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate harum
+                    excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam tempore consectetur animi sequi dolore deserunt error nulla
+                    officia amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate
+                    harum excepturi?
+                  </p>
+                </div>
+              </div>
+              <!-- Autumn tab -->
+              <div id="autumn">
+                <figure>
+                  <img src="https://picsum.photos/id/34/400/270" alt="summer" />
+                </figure>
+                <div>
+                  <h4>Summer</h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+                    tempore consectetur animi sequi dolore deserunt error nulla officia
+                    amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate harum
+                    excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam tempore consectetur animi sequi dolore deserunt error nulla
+                    officia amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate
+                    harum excepturi?
+                  </p>
+                </div>
+              </div>
+              <!-- Winter tab -->
+              <div id="winter">
+                <figure>
+                  <img src="https://picsum.photos/id/34/400/270" alt="summer" />
+                </figure>
+                <div>
+                  <h4>Summer</h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+                    tempore consectetur animi sequi dolore deserunt error nulla officia
+                    amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate harum
+                    excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam tempore consectetur animi sequi dolore deserunt error nulla
+                    officia amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate
+                    harum excepturi?
+                  </p>
+                </div>
+              </div>
+              <!-- Spring tab -->
+              <div id="spring">
+                <figure>
+                  <img src="https://picsum.photos/id/34/400/270" alt="summer" />
+                </figure>
+                <div>
+                  <h4>Summer</h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+                    tempore consectetur animi sequi dolore deserunt error nulla officia
+                    amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate harum
+                    excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam tempore consectetur animi sequi dolore deserunt error nulla
+                    officia amet! Autem unde voluptas modi ipsa ullam ex facere cupiditate
+                    harum excepturi?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 </html>
