@@ -29,6 +29,10 @@ body {
     line-height:160%;
 }
 
+button {
+  cursor:pointer;
+}
+
 @font-face {
     font-family: 'neue corp condensed';
     src: url(fonts/PPNeueCorp-CondensedUltrabold.otf);
@@ -246,7 +250,7 @@ body {
     font-size:10rem;
     text-align:right;
     margin-right:16px;
-    margin-top:40px;
+    margin-top:38px;
     letter-spacing:-3%;
   }
 
@@ -311,7 +315,7 @@ body {
   #profiletop {
     display:flex;
     align-items:center;
-    padding: 50px 50px 10px 50px;
+    padding: 50px;
     justify-content:space-between;
   }
 
@@ -327,77 +331,5 @@ body {
     font-family:'terminal grotesque';
   }
 
-  .btn {
-    font-size: 12px;
-    font-weight: 600;
-    padding: 10px;
-    background: transparent;
-    outline: transparent;
-    border: transparent;
-    color: var(--accent-gradient);
-    transition: 300ms all ease-in-out;
-    cursor:pointer;
- }
-  @media only screen and (max-width: 576px) {
-    .btn {
-      padding: 10px 8px;
-   }
- }
-  .btn.active {
-    color: var(--accent-gradient);
-    position: relative;
- }
-  .btn.active::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: var(--accent-gradient);
-    position: absolute;
-    bottom: -2px;
-    left: 0;
- }
-  .tabs {
-    border-radius: 8px;
-    padding: 32px 32px 10px 32px;
- }
-  .tabs__pills {
-    width: fit-content;
- }
-  .tabs__panels {
-    padding: 20px 0;
- }
-  .tabs__panels > div {
-    width: 100%;
-    display: none;
-    gap: 20px;
- }
-  .tabs__panels > div > figure {
-    max-width: 400px;
-    width: 100%;
-    flex-shrink: 0;
- }
-  @media only screen and (max-width: 992px) {
-    .tabs__panels > div > figure {
-      margin: 0 auto;
-   }
- }
-  .tabs__panels > div > figure img {
-    width: 100%;
-    display: block;
- }
-  .tabs__panels > div > div > h4 {
-    font-size: 24px;
-    margin: 10px 0;
- }
-  .tabs__panels > div > div > p {
-    line-height: 1.8;
- }
-  .tabs__panels > div.active {
-    display: flex;
- }
-  @media only screen and (max-width: 978px) {
-    .tabs__panels > div.active {
-      flex-direction: column;
-   }
- }
+  
   
