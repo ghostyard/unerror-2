@@ -301,7 +301,7 @@ button {
 
   .bg2box h3, .bg3box h3 {
     font-size:1.2rem;
-    font-family:'terminal grotesque';
+
   }
 
   .bg2box i, .bg3box i {
@@ -325,8 +325,6 @@ button {
     padding:8px 32px;
     font-family:'terminal grotesque';
   }
-
-  /**profile**/
 
   #profile {
     background-color: var(--grey-100);
@@ -352,5 +350,42 @@ button {
     font-family:'terminal grotesque';
   }
 
-  
-  
+  #arcs {
+    display:flex;
+    align-items:center;
+    padding: 50px;
+    justify-content:space-between;
+    height:120px;
+  }
+
+  #arcs .profiletitle {
+    color:var(--grey-100);
+  }
+
+  .topright a {
+    background-color:var(--accent-gradient);
+    border:2px solid var(--grey-100);
+    font-family:'terminal grotesque';
+    text-transform:uppercase;
+    text-decoration:underline;
+    padding:15px 30px;
+    font-size:1.4rem;
+    color:var(--grey-100);
+    text-decoration:none;
+  }
+
+  .topright a:hover {
+    background-color:var(--grey-100);
+    color:var(--accent-gradient);
+  }
+
+  #profile .topright a {
+    background-color:var(--grey-100);
+    color:var(--accent-gradient);
+    border-color:var(--accent-gradient);
+  }
+
+  #profile .topright a:hover {
+      background-color:var(--accent-gradient);
+      color:var(--grey-100);
+    }
