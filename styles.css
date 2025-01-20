@@ -100,9 +100,9 @@ button {
 
 .container {  display: grid;
     background-color:var(--accent-gradient);
-    margin-top:100px;
+    margin-top:20px;
     width:100vw;
-    height:100%;
+    height:90%;
     grid-template-columns: 1fr 1fr 1fr 50px 50px;
     grid-template-rows: 1fr 300px;
     gap: 0px 0px;
@@ -153,7 +153,7 @@ button {
   .largetext { 
     grid-area: largetext; 
     font-family:'terminal grotesque';
-    font-size:18rem;
+    font-size:16rem;
     letter-spacing:-3%;
     display:flex;
     align-items:center;
@@ -177,35 +177,35 @@ button {
 }
 
 #infocontainer {
-
+    margin-top:-50px;
     border-right:50px solid var(--grey-100);
 }
 
   .fadeInUp-1 {
     animation: 1.5s fadeInUp forwards;
     animation-delay:0s;
-    margin-bottom:16px;
+    margin-bottom:8px;
     opacity:0;
   }
 
   .fadeInUp-2 {
     animation: 1.5s fadeInUp forwards;
     animation-delay:1.5s;
-    margin-bottom:16px;
+    margin-bottom:8px;
     opacity:0;
   }
 
   .fadeInUp-3 {
     animation: 1.5s fadeInUp forwards;
     animation-delay:3s;
-    margin-bottom:16px;
+    margin-bottom:8px;
     opacity:0;
   }
 
   .fadeInUp-4 {
     animation: 1.5s fadeInUp forwards;
     animation-delay:4.5s;
-    margin-bottom:16px;
+    margin-bottom:8px;
     opacity:0;
   }
 
@@ -237,7 +237,7 @@ button {
     column-count: 2;
   }
 
-  .rules span {
+  .rules span { 
     font-family:'terminal grotesque';
     background-color:var(--accent-gradient);
     color:var(--grey-100);
@@ -271,28 +271,48 @@ button {
     width:500px;
   }
 
+  .bg2box {
+    display:flex;
+    padding:50px;
+    width:1200px;
+    background-color:var(--grey-100);
+    color:var(--grey-700);
+    display:none;
+  }
+
+  .bg2box[style*='display: block']{
+    display: flex !important;
+    padding:50px;
+    width:1100px;
+}
+
   .bg3box {
     background-color:var(--grey-100);
     color:var(--grey-700);
     padding:50px;
-    height:442px;
     width:500px;
     display:none;
+    height:507px;
   }
 
-  .bg3box h3 {
-    font-size:1.6rem;
+  .bg2box > div {
+    width:33%;
+  }
+
+  .bg2box h3, .bg3box h3 {
+    font-size:1.2rem;
     font-family:'terminal grotesque';
   }
 
-  .bg3box i {
+  .bg2box i, .bg3box i {
     color:var(--accent-gradient);
-    font-size:5rem;
+    font-size:3rem;
   }
 
   .bgtop {
     display:flex;
     align-items:center;
+    justify-content:center;
     gap:16px;
   }
 
@@ -303,6 +323,7 @@ button {
     margin:auto;
     font-size:1.3rem;
     padding:8px 32px;
+    font-family:'terminal grotesque';
   }
 
   /**profile**/

@@ -22,7 +22,7 @@ if (tabButtons && tabContents) {
 
 
 $( "#bgextend" ).on( "click", function() {
-    $( ".bg3box" ).fadeToggle( "slow", function() {
+    $( ".bg3box, .bg2box" ).fadeToggle( "slow", function() {
       // Animation complete
     });
   });
